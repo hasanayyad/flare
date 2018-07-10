@@ -1,0 +1,83 @@
+/*Settings for whole page*/
+/*Until bottom of nav in header, same on every page*/
+
+.rectangle {
+  height: 250px;
+  background-color: #37679e;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  padding: 5px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  background: none;
+}
+
+.searchTerm:focus{
+  color: #000000;
+  font-size: 120%;
+}
+
+.searchTerm::placeholder{
+  font-size: 150%;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #FFFFFF;
+  background-color: #37679e;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.friend-content {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 80px;
+  grid-template-areas:
+      ". a a ."
+      ". a a .";
+}
+
+.friend-article {
+  border: 1px solid black;
+	border-radius: 4px;
+	padding: 0.5rem;
+	width: 350px;
+  height: 450px;
+}
+
+.friend-img-center {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
